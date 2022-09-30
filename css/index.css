@@ -18,6 +18,8 @@ body {
 }
 .none{
     display: none;
+    position: fixed;
+    z-index: 0;
 }
 
 nav {
