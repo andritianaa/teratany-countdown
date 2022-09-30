@@ -36,8 +36,10 @@ nav {
     box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
    
 }
-nav h1{
+nav p{
     font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
 
 }
 
