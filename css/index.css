@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --blue-background: #0974d4;
+    --blue-background-hard: #045299;
+    --soft-green: #e3ecc2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+ 
+    overflow-x: hidden;
+    background: var(--blue-background);
+}
+
+#bloc {
+    height: 2rem;
+    background: var(--blue-background);
+}
+
+nav {
+    color: var(--blue-background);
+    z-index: 10;
+    height: 3rem;
+    background: white;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    position: fixed;
+    left: 50%;
+    border-radius: .5rem;
+    top: 1rem;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+   
+}
+nav h1{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav img {
+    height: 2rem !important;
+    object-fit: cover;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+nav div a {
+    text-decoration: none;
+    cursor: pointer;
+    margin: .3rem;
+    padding: .5rem;
+    color: white;
+    font-size: 1.1rem;
+}
+
+#group1 {
+    height: 100vh;
+    position: relative;
+}
+
+#group1 .background {
+    display: flex;
+    position: relative;
+}
+
+#group1 .background img {
+    width: 105vw;
+    height: 120vh;
+    position: absolute;
+    top: -21vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#group1  .text {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50% ;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#group1 .background .text #countdown{
+    font-size: 2rem;
+}
+
+#group1 .background .text h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#group1 .background .text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+#group1 .dotShape {
+    height: 5rem;
+    width: auto;
+    position: absolute;
+    top: 40vh;
+    right: -2.5rem;
+    transform: rotate(90deg);
+}
+
+#group1 .dotShapeBottom {
+    height: 5rem;
+    width: auto;
+    position: absolute;
+    top: 70vh;
+    left: 7rem;
+}
+
+
+#group3 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#group3 .duo {
+    display: flex;
+    width: 100vw;
+}
+
+#group3 .duo .squareimg,
+#group3 .duo .squaredesc {
+    min-width: 50vw;
+    max-width: 50vw;
+    height: 50vw;
+}
+
+#group3 .duo .squareimg {
+    object-fit: cover;
+    background-color: #045299;
+}
+
+#group3 .duo .squaredesc {
+    color: #504f4f;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#group3 .duo .squaredesc .desc {
+    padding: 3rem;
+}
+
+#group3 .duo .squaredesc .desc h1 {
+    font-size: 2.5rem;
+}
+
+#group3 .duo .squaredesc .desc p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    width: 85%;
+    font-size: 1.1rem;
+}
+
+#group3 .duo .button {
+    cursor: pointer;
+    background-color: var(--blue-background);
+    color: white;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 1rem;
+    transition: ease all .3s;
+    letter-spacing: 3px;
+    width: 200px;
+    text-decoration: none;
+}
+
+#group3 .duo .button:hover {
+    background-color: var(--blue-background-hard);
+}
+
+#group3 .dotshape {
+    position: absolute;
+    height: 5rem;
+    width: auto;
+    top: calc(50vw - 2.5rem);
+    left: 20%;
+}
+
+#group3 .dotshapew {
+    position: absolute;
+    height: 5rem;
+    width: auto;
+    top: calc(100vw - 2.5rem);
+    right: 10%;
+}
+
+#group4 {
+    background: var(--blue-background);
+}
+
+#group4 div {
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#group4 div h1 {
+    margin-top: 4rem;
+}
+
+#group4 div .orders {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 4rem;
+}
+
+#group4 div .orders .order {
+    margin: 2rem;
+    max-width: 270px;
+    min-width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#group4 div .orders .order .number {
+    margin: 1rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue-background);
+}
+
+#group4 div .orders .order h2 {
+    margin: 1rem;
+}
+
+#group4 div .orders .order p {
+    font-weight: lighter;
+}
+
+#group5 {
+    position: relative;
+    background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('./../static/Slider.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+
+#group5 img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(50%)
+}
+
+#group5 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#group5 .content h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+#group5 .content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+#group5 .button {
+    text-decoration: none ;
+    cursor: pointer;
+    background-color: var(--blue-background);
+    color: white;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 1rem;
+    transition: ease all .3s;
+    letter-spacing: 3px;
+    width: 200px;
+    margin-top: 3rem;
+}
+
+#group5 button:hover {
+    background-color: var(--blue-background-hard);
+}
+
+
+@media only screen and (max-width: 850px) {
+    footer .content{
+        display: block;
+    }
+    #group1 .dotShape{
+        display: none;
+    }
+    #group3 .duo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #group3 .duo.inv {
+        flex-direction: column-reverse;
+    }
+
+    #group3 .duo .squareimg,
+    #group3 .duo .squaredesc {
+        min-width: 100vw;
+        max-width: 100vw;
+        height: fit-content;
+    }
+    #navbar{
+       justify-content: start;
+    width: calc(80vw);
+       
+        
+    }
+    #navbar div a{
+        display: none;
+    }
+}
+
+#group6 {
+    position: relative;
+}
+
+#group6 .back {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+#group6 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--blue-background);
+    text-align: center;
+}
+
+#group6 .content h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 6rem;
+    height: 7rem;
+}
+
+#group6 .content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+#group6 .content h2 {
+    margin-top: 2rem;
+}
+
+#group6 .content .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#group6 .content .social img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
+
+footer {
+    position: relative;
+}
+
+footer .back {
+
+    margin-top: -40vh;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+footer .back img {
+    width: 105vw;
+    height: 120vh;
+}
+
+footer .content {
+    bottom: 0;
+    position: absolute;
+    color: white;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+footer .content .partone {
+    width: 100vw;
+    max-width: 500px;
+    
+}
+
+footer .content .parttwo {
+    
+    display: flex;
+    text-decoration: none;
+}
+footer .content .parttwo .one{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+footer .content .parttwo .one a{
+    text-decoration: none;
+    color: white;
+}
+footer .content .parttwo .one h3,
+footer .content .partone h1{
+    margin-bottom: 2rem;
+}
+footer .content .partone p{
+    font-family: 'Poppins', sans-serif;
+}

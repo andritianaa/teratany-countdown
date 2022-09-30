@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teratany</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <h1>TERATANY</h1>
+        
+    </nav>
+    <div id="group1">
+            <div class="text">
+                <h1>Teratany is a deviantcoin and SDG based social network.</h1>
+                <div id="countdown"></div>
+            </div>
+        
+        <img class="dotShape" src="./static/dotshapewhite.png" alt="" srcset="">
+        <img class="dotShapeBottom" src="./static/dotshapewhite.png" alt="" srcset="">
+    </div>
+    
+    <div id="group3">
+        <div class="duo">
+            <img class="squareimg" src="./static/COMP_ALPHA without bg.png" alt="ramen plate" srcset="">
+            <div class="squaredesc">
+                <div class="desc">
+                    <h1>DeviantCoin(DEV) is an innovative cryptocurrency.</h1>
+                    <p>The Deviant Coin is a well-decentralized network of Masternodes without superfluous control and intermediaries/gatekeepers with more than 90% pure PoS Block reward phase and ensures lightning fast and secure transaction, multi-wallets, encrypted messaging, stealth address for complete anonymity, low number of confirmations.
+
+                        Low fees and a limited number of total coin supply for a faster increase in value. Since the Master nodes are constantly connected to the network & perform certain tasks, this allows the coin to achieve faster and more private transactions</p>
+                    <a href="https://deviantcoin.io/" class="button">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="duo inv">
+            <div class="squaredesc">
+                <div class="desc">
+                    <h1>17 Goals to Transform Our World</h1> 
+                    <p>The Sustainable Development Goals are a call for action by all countries – poor, rich and middle-income – to promote prosperity while protecting the planet. They recognize that ending poverty must go hand-in-hand with strategies that build economic growth and address a range of social needs including education, health, social protection, and job opportunities, while tackling climate change and environmental protection. More important than ever, the goals provide a critical framework for COVID-19 recovery.</p>
+                    <a href="https://www.un.org/sustainabledevelopment/sdgs-framework-for-covid-19-recovery/" class="button">READ MORE</a>
+                </div>
+            </div>
+            <img class="squareimg" src="https://www.borregaard.com/media/kmxhsen1/un-sdg-wheel-square-greygreenish.png?crop=0.0483271375464684,0.0483271375464684,0.00167286245353171,0.00167286245353171&cropmode=percentage&width=640&height=640" alt="two ramen plate" srcset="">
+        </div>
+        <img class="dotshape" src="./static/dotShapeBlue.png" alt="" srcset="">
+        <img class="dotshapew" src="./static/dotshapewhite.png" alt="" srcset="">
+        <div id="group4">
+            <div class="">
+                <h1>DEV Blockchain</h1>
+                <div class="orders">
+                    <div class="order">
+                        <div class="number">
+                            <p>01</p>
+                        </div>
+                        <h2>Order</h2>
+                        <p>Transactions are completely anonymous using Zerocoin protocol!</p>
+                    </div>
+                    <div class="order">
+                        <div class="number">
+                            <p>02</p>
+                        </div>
+                        <h2>SuperFast</h2>
+                        <p>The transactions are lighting fast !!</p>
+                    </div>
+                    <div class="order">
+                        <div class="number">
+                            <p>03</p>
+                        </div>
+                        <h2>Masternodes</h2>
+                        <p>Masternodes help keep integrity of the network and enable support.</p>
+                    </div>
+                    <div class="order">
+                        <div class="number">
+                            <p>04</p>
+                        </div>
+                        <h2>Secure</h2>
+                        <p>POS and Masternode network protects transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="group5">
+            <div class="content">
+                <h1>Deviant X Multi-Wallet</h1>
+                <p>Have absolute control of your wallet! Privacy being an important issue, we have the most secure cross-chain enabled mobile wallet!</p>
+                <a href="https://deviantcoin.io/deviant-x/" class="button">Deviant X</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    var end = new Date('10/05/2022 10:1 AM');
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function showRemaining() {
+    var now = new Date();
+    var distance = end - now;
+    if (distance < 0) {
+
+        clearInterval(timer);
+        document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+        return;
+    }
+    var days = Math.floor(distance / _day);
+    var hours = Math.floor((distance % _day) / _hour);
+    var minutes = Math.floor((distance % _hour) / _minute);
+    var seconds = Math.floor((distance % _minute) / _second);
+
+    document.getElementById('countdown').innerHTML = days + 'days ';
+    document.getElementById('countdown').innerHTML += hours + 'hrs ';
+    document.getElementById('countdown').innerHTML += minutes + 'mins ';
+    document.getElementById('countdown').innerHTML += seconds + 'secs';
+}
+
+timer = setInterval(showRemaining, 1000);
+</script>
+
+</html>
+<!-- HZ987654321+ -->
