@@ -16,7 +16,9 @@ body {
     overflow-x: hidden;
     background: var(--blue-background);
 }
-
+.none{
+    display: none;
+}
 
 nav {
     color: var(--blue-background);
