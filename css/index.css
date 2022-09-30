@@ -17,9 +17,13 @@ body {
     background: var(--blue-background);
 }
 .none{
-    display: none;
     position: fixed;
     z-index: 0;
+    color: var(--blue-background);
+}
+img.none{
+    height: 2px;
+    width: 2px;
 }
 
 nav {
